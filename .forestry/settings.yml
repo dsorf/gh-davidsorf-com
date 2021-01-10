@@ -5,12 +5,26 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: directory
+  path: content/author
+  label: Author
+  create: documents
+  match: "*.md"
+  templates:
+  - author
+- type: directory
   path: content
   label: Post
   create: documents
   match: "*.md"
   templates:
   - post
+- type: directory
+  path: ''
+  label: Certification
+  create: all
+  match: "**/*"
+  templates:
+  - tools
 - type: directory
   path: data
   label: Data
@@ -19,19 +33,12 @@ sections:
   new_doc_ext: yml
   templates:
   - tools
-- type: directory
-  path: content/author
-  label: Author
-  create: documents
-  match: "*.md"
-  templates:
-  - author
-- type: document
-  path: content/contact/_index.md
-  label: Contact
 - type: document
   path: config.toml
   label: Configuration
+- type: document
+  path: content/contact/_index.md
+  label: Contact
 upload_dir: static/images
 public_path: "/images"
 front_matter_path: ''
