@@ -23,6 +23,7 @@ fields:
       name: link
       label: link
 pages:
+- data/debug-2020-11-30.txt.yml
 - data/tools.yml
 - data/tools.yml
 - dsssadasdasda.md
