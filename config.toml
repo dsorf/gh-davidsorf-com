@@ -78,5 +78,9 @@ icon = "ti-linkedin"
 link = "#"
 [[tools]]
 title = "Nazev konta"
+[[tools.tool]]
+image = "/images/tools/vs-code.png"
+link = "sdfsdfsdfs"
+name = "sdsdfsdfs"
 [[tools]]
 [[tools]]
